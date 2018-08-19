@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './shared/material.module';
 
 import { AppComponent } from './app.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
@@ -19,8 +18,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    AppRoutingModule,
-    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
