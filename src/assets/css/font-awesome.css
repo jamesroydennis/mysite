@@ -2024,3 +2024,6 @@
 .fa-fonticons:before {
   content: "\f280";
 }
+.fa-award:before{
+  content: "\f559";
+}

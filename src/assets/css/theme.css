@@ -1473,7 +1473,7 @@ Table of Contents:
 
 	.icon-xs { font-size: 13px; width: 34px; }
 	.icon-xs.icon-circle { font-size: 11px; height: 34px; }
-
+	nav ul.list-inline a.icon.icon-xs { width:30px; }
 	/* Colors */ 
 
 	.icon-green, .icon-success { background-color: #85b448; }

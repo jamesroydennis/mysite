@@ -12,11 +12,11 @@
             <h1>Don’t hesitate to <strong>contact me</strong>!</h1>
             <!-- Contact List -->
             <ul class="list-unstyled list-unstyled-icons">
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>Venice<br />California 90291, USA</li>
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:contactme@jamesroydennis.com">James Roy Dennis</a></li>
-                <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i><a href="tel:1-317-782-5282">+1 317 782-5282</a></li>
+                <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i><span>Venice, California 90291 USA</span></li>
+                <li><i class="inline-icon icon-before-and-after text-primary fa fa-at"></i><a href="mailto:contactme@jamesroydennis.com">James Roy Dennis</a></li>
+                <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i><a href="tel:1-317-782-5282">+1-317-782-5282</a></li>
             </ul>
-            <a href="#" class="btn btn-primary" data-target="messenger"><span>Use Contact Form</span><i class="ti-email"></i></a>
+            <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal"><span>Use Contact Form</span><i class="ti-email"></i></a> -->
             <h5 class="margin-t-60">Check my social media!</h5>
             <ul class="list-inline">
                 <li><a href="https://www.linkedin.com/in/indyjamesrdennis/" target="_blank" class="icon icon-circle icon-xs icon-linkedin"><i class="fa fa-linkedin"></i></a></li>
@@ -28,6 +28,52 @@
             <!-- <h5>Like me on Facebook</h5> -->
             <!-- FB Like -->
             <!-- <div class="fb-like" data-href="http://www.facebook.com/suelopl" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div> -->
+        </div>
+
+        <!-- Modal - Contact Form -->
+        <div class="modal fade modal-blue-dark" id="contact-modal" tabindex="-1" role="dialog">
+            <!-- <button type="button" class="modal-close" data-dismiss="modal"><span class="sr-only">Close</span><i class="ti-close"></i></button> -->
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-intro">
+                    <h1 class="margin-b-60">Send Me A Message</h1>
+                </div>
+
+                <div class="modal-content">
+                    {{diagnostic}}
+                    <form (ngSubmit)="onSubmit(); ContactForm.reset();">
+                        <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="name-input">Name:</label>
+                                    <input type="text" name="name" id="name-input" class="form-control input" 
+                                        required [(ngModel)]="model.name" placeholder="Your Name" #spy>
+                                    TODO: remove this: {{model.name}}
+                                    <br>TODO: remove this: {{spy.className}}
+                                    <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                                        Name is required
+                                    </div> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email-input">Email:</label>
+                                    <input type="email" name="email" class="form-control input" id="email-input" 
+                                        required [(ngModel)]="model.email" placeholder="Email" #spy>
+                                        TODO: remove this: {{model.email}}
+                                        <br>TODO: remove this: {{spy.className}}
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-textarea">Comments:</label>
+                                    <textarea name="message" class="form-control textarea" id="form-textarea" 
+                                        required [(ngModel)]="model.message" placeholder="Comments" rows="10" #spy></textarea>
+                                        TODO: remove this: {{model.message}}
+                                        <br>TODO: remove this: {{spy.className}}
+                                </div>
+                                <div class="form-group text-right">
+                                    <button type="submit" class="btn btn-tertiary"><span>Submit</span><i class="ti-email"></i></button>
+                                </div>
+                        </div>
+                    </form>
+                </div><!--content-->
+            </div><!-- document -->
         </div>
 
 </section>

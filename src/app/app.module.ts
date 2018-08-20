@@ -19,6 +19,8 @@ import { SkillsComponent } from './components/resume/components/skills/skills.co
 import { HobbiesComponent } from './components/resume/components/hobbies/hobbies.component';
 import { SpecialtiesComponent } from './components/resume/components/specialties/specialties.component';
 import { BackgroundComponent } from './components/resume/components/background/background.component';
+import { EducationComponent } from './components/resume/components/education/education.component';
+import { AwardsComponent } from './components/resume/components/awards/awards.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { BackgroundComponent } from './components/resume/components/background/b
     SkillsComponent,
     HobbiesComponent,
     SpecialtiesComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    EducationComponent,
+    AwardsComponent,
   ],
   imports: [
     BrowserModule,
