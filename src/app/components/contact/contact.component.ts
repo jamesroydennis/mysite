@@ -18,9 +18,6 @@ import { ContactForm } from './contact-form';
 
 export class ContactComponent implements OnInit {
 
-  // name: string;
-  // email: string;
-  // message: string;
   submitted: boolean = false;
 
   constructor() { }
@@ -30,14 +27,14 @@ export class ContactComponent implements OnInit {
     
   }
 
-  model = new ContactForm('','','');
+   model = new ContactForm('','','');
 
-  // TODO: Remove this when we're done
-  get diagnostic() { return JSON.stringify(this.model); }
+  // // TODO: Remove this when we're done
+   get diagnostic() { return JSON.stringify(this.model); }
 
   onSubmit() {
     this.submitted = true;
-    alert('Thank you for your feedback');
+    //alert('Thank you for your feedback');
   }
 
 }
