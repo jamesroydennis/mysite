@@ -16,7 +16,7 @@
     "@angular/cdk-experimental": "^6.4.5",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
-    "@angular/core": "^7.2.15",
+    "@angular/core": "^8.2.13",
     "@angular/flex-layout": "^6.0.0-beta.17",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
@@ -33,7 +33,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.14.4",
     "rxjs": "^6.0.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.16",
@@ -54,6 +54,6 @@
     "protractor": "^5.4.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~3.4"
+    "typescript": "^3.4"
   }
 }
