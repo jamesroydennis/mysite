@@ -31,20 +31,15 @@ ng config -g schematics.@schematics/angular:application.styleext scss
 --/usr/local/lib/node_modules/@angular/cli/node_modules/@schematics/angular/application/schema.json
 
 
-https://brownelaborlaw.com/
-
-https://www.roadbikeoutlet.com/vilano-diverse-4-0-urban-performance-hybrid-road-bike-belt-drive-8-speed-shimano-alfine.html?attribute591=169&CAWELAID=430000060000024952&catargetid=430000060000025311&cadevice=c&gclid=Cj0KCQjwnZXbBRC8ARIsABEYg6Ak4IGifM2feYFvV2mQh5piHwcYqmrjEl2zI80e3mn1OIpN6WLicVQaAg_CEALw_wcB
-
-https://www.sears.com/vilano-553-ph4-vilano-diverse-4.0-urban-performance/p-0000000000000002373600000000000011678648P?sid=IDx20110310x00001i&gclid=CjwKCAjwwJrbBRAoEiwAGA1B_cqf_Qrm-3yWAI6lgYksgsbL8ISR6fBfBCmg_Mdbnu9F-R8RcBM-MxoCWcgQAvD_BwE&gclsrc=aw.ds&dclid=CNbYxv3y1twCFQx7YgodB9ULKg
-
------angular tutorials 
-
+-----angular tutorials
+------------------------------------------------------------------------------
 https://www.youtube.com/watch?v=oIZjLRaInOs&list=PLqq-6Pq4lTTb7JGBTogaJ8bm7f8VCvFkj&index=16
 
 https://angular.io/guide/quickstart
 
 
 -----initializing
+------------------------------------------------------------------------------
 
 ng new portfolio —-style=scss --routing
 
@@ -54,7 +49,7 @@ npm install ngx-bootstrap bootstrap --save
 
 
 -----styling
-
+------------------------------------------------------------------------------
 mkdir src/styles
 
 in styles.scss -> @import "~bootstrap/scss/bootstrap.scss";
@@ -70,16 +65,19 @@ in app.module.ts -> import { BrowserAnimationsModule } from '@angular/platform-b
 
 
 --create Material Module:
+------------------------------------------------------------------------------
 ng g m shared/material --flat
 
 in app.module.ts -> import ./shared/material.module
 
 --gesture support
+------------------------------------------------------------------------------
 npm install --save hammerjs
 
 in main.ts -> import "hammerjs"
 
 --material icons
+------------------------------------------------------------------------------
 in index.html add <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 go to https://github.com/angular/material2/blob/master/src/demo-app/demo-material-module.ts and paste into material.module.ts
@@ -91,19 +89,19 @@ npm audit fix —force
 ng s -o
 
 --routing
-
+------------------------------------------------------------------------------
 https://angular.io/guide/lazy-loading-ngmodules
 https://angular.io/tutorial/toh-pt5
 
 
 
 --flexbox layout
+------------------------------------------------------------------------------
  ng g m {module_name} --flat --routing
 
 
 
 https://github.com/gdi2290/angular-starter/wiki/How-to-use-Bootstrap-3-and-Sass-and-ngx-bootstrap
-
 
 
 https://github.com/angular/flex-layout/wiki/API-Documentation#containers
@@ -112,16 +110,11 @@ https://github.com/angular/flex-layout/wiki/API-Documentation#containers
 https://material.angular.io/components/toolbar/overview
 
 
-
-
-
-
 git remote add origin https://github.com/jamesroydennis/jamesroydennis.github.io.git (https://scotch.io/@collinl65/deploying-angular4-app-to-github-pages)
 
 ng test
 
 ng e2e
-
 
 ng s -o is short for ng serve —open
 

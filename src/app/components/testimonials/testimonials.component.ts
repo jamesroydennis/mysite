@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsComponent implements OnInit {
 
+  yearsOfExperience = 13;
+
   constructor() { }
 
   ngOnInit() {
+    this.yearsOfExperience = new Date().getFullYear() - 2007;
   }
 
 }
